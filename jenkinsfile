@@ -1,12 +1,18 @@
 pipeline {
     agent any
-
+	
     stages {
         stage('Build') {
             steps {
                 echo 'Building..'
             }
         }
+	stage('Mvdir') {
+	    steps {
+	    	echo 'Changing name of Dir...'
+		sh "mv sibuv.txt sibuvi.txt"
+	    }
+	}
         stage('Test') {
             steps {
                 echo 'Testing..'
