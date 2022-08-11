@@ -9,8 +9,10 @@ pipeline {
         }
 	stage('Mvdir') {
 	    steps {
-	    	echo 'Changing name of Dir...'
-		mv sibuv.txt sibuvi.txt
+	    	sh '''|
+		   echo "Changing name of Dir..."
+		   mv sibuv.txt sibuvi.txt
+		'''
 	    }
 	}
         stage('Test') {
