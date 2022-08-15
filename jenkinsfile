@@ -12,7 +12,7 @@ pipeline {
 	    	sh '''
 		       echo "Changing name of Dir..."
 		       mv sibuv.txt sibuvi.txt
-		       mkdir lala
+		       touch lala.txt
 		    '''
 	    }
 	}
