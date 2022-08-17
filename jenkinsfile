@@ -10,9 +10,9 @@ pipeline {
 	stage('Mvdir') {
 	    steps {
 	    	sh '''#!/bin/bash
-		       echo "Changing name of Dir..."
-		       mv sibuv.txt sibuvi.txt
-		       touch lala.txt
+		    echo "Changing name of Dir..."
+		    mv sibuv.txt sibuvi.txt
+		    touch lala.txt
 		    '''
 	    }
 	}
