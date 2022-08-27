@@ -1,7 +1,7 @@
 import boto3
 import json
 
-f = open('credentials.json',)
+f = open('/etc/credential/credentials.json',)
 
 # returns JSON object as
 # a dictionary
